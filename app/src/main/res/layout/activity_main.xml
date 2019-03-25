@@ -18,22 +18,12 @@
         android:paddingTop="20dp"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <TextView
-            android:id="@+id/accmeter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="10dp"
-            android:text="Accelerometer"
-            android:textAlignment="center"
-            android:textSize="24sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:text="Current Acceleration:"
             android:textSize="20dp" />
@@ -41,6 +31,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="125dp"
+            android:layout_margin="10dp"
             android:background="#ffffff"
             android:gravity="center|top"
             android:orientation="horizontal">
@@ -123,6 +114,28 @@
                     android:textSize="15dp" />
             </LinearLayout>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:background="#ffffff"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+        </LinearLayout>
+
+
 
         <Button
             android:id="@+id/button"
